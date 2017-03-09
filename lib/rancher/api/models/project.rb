@@ -7,7 +7,7 @@ module Rancher
 
       has_many :machines
       has_many :hosts
-      has_many :environments
+      has_many :stacks
       has_many :services
 
       class << self

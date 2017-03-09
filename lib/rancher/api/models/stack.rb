@@ -1,7 +1,6 @@
-# These are 'Stacks' in the UI
 module Rancher
   module Api
-    class Environment
+    class Stack
       include Her::Model
       include Helpers::Model
 

@@ -1,11 +1,12 @@
 # helpers
 require 'rancher/api/helpers/model'
 # models
-require 'rancher/api/models/environment'
+require 'rancher/api/models/stack'
 require 'rancher/api/models/host'
 require 'rancher/api/models/instance'
 require 'rancher/api/models/machine'
 require 'rancher/api/models/project'
+require 'rancher/api/models/projecttemplate'
 require 'rancher/api/models/service'
 require 'rancher/api/models/ipaddress'
 require 'rancher/api/models/registry'

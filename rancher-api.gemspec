@@ -19,7 +19,7 @@ Gem::Specification.new do |spec|
   if spec.respond_to?(:metadata)
     spec.metadata['allowed_push_host'] = 'https://rubygems.org'
   else
-    raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
+    raise 'RubyGems 2.0 or newer is required to protect against public gem pushes.'
   end
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
@@ -27,17 +27,17 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'her', '~> 0.8.1'
+  spec.add_dependency 'her', '~> 0.8.4'
   spec.add_dependency 'faye-websocket'
   spec.add_dependency 'faraday_middleware'
 
   spec.add_development_dependency 'bundler', '~> 1.10'
-  spec.add_development_dependency 'rake', '~> 10.0'
-  spec.add_development_dependency 'rspec', '~> 3.3.0'
+  spec.add_development_dependency 'rake', '~> 12.0'
+  spec.add_development_dependency 'rspec', '~> 3.5.0'
   spec.add_development_dependency 'pry'
   spec.add_development_dependency 'byebug'
-  spec.add_development_dependency 'webmock', '1.21.0'
-  spec.add_development_dependency 'vcr', '2.9.3'
+  spec.add_development_dependency 'webmock'
+  spec.add_development_dependency 'vcr', '~> 3.0.3'
   spec.add_development_dependency 'awesome_print'
   spec.add_development_dependency 'guard-rspec'
   spec.add_development_dependency 'simplecov'

@@ -89,7 +89,6 @@ module Rancher
             context 'response is nil' do
               it 'raises a RancherModelError' do
                 expect { dummy.handle_response(nil) }.to raise_error(Model::RancherModelError)
-
               end
             end
           end

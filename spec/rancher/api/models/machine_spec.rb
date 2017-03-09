@@ -2,7 +2,6 @@ require 'spec_helper'
 
 module Rancher
   module Api
-
     describe Machine do
       let(:project) do
         VCR.use_cassette('projects/1a5') do
@@ -52,6 +51,5 @@ module Rancher
         it { expect(index.first.driver_config).to be_instance_of(Machine::DriverConfig) }
       end
     end
-
   end
 end
